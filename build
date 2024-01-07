@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# Build script.
+
+clang -v prime.c -o prime -Ofast -march=native -fuse-ld=lld
+javac -verbose Prime.java

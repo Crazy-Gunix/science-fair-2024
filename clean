@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Cleanup.
+
+rm -rvf prime Prime.class
