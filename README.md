@@ -31,7 +31,8 @@ Here are the packages required (debian):
 
 - build-essential
 - lld
-- openjdk-17-jdk (you can use a different version if needed)
+- bc
+- openjdk-17-jdk (javac)
 
 
 
