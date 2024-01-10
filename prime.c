@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2023 Jacob Gibson
+Copyright (c) 2023-2024 Jacob Gibson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -43,11 +43,12 @@ int main(void)
         memset(primes, 0, BITNSLOTS(MAX));
 
         for(i = 2; i < MAX; i++) {
-                if(!BITTEST(primes, i))
+                if(!BITTEST(primes, i)) {
                         for(j = i + i; j < MAX; j += i) {
                                 printf("%d\n", j);
                                 BITSET(primes, j);
                         }
+                }
 	}
 
 	return 0;
