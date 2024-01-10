@@ -25,6 +25,7 @@ SOFTWARE.
 #include <string.h>
 #include <limits.h>
 #include <stdint.h>
+#include <stdio.h>
 
 #define BITMASK(b) (1 << ((b) % CHAR_BIT))
 #define BITSLOT(b) ((b) / CHAR_BIT)
@@ -43,8 +44,10 @@ int main(void)
 
         for(i = 2; i < MAX; i++) {
                 if(!BITTEST(primes, i))
-                        for(j = i + i; j < MAX; j += i)
+                        for(j = i + i; j < MAX; j += i) {
+                                printf("%d\n", j);
                                 BITSET(primes, j);
+                        }
 	}
 
 	return 0;

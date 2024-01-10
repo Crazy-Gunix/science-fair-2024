@@ -34,8 +34,10 @@ public class Prime {
 
     for (i = 3; i * i <= n; i += 2) {
       if (Primes[i / 2] == 0) {
-        for (j = 3 * i; j <= n; j += 2 * i)
+        for (j = 3 * i; j <= n; j += 2 * i) {
+          System.out.println(j);
           Primes[j / 2] = 1;
+        }
       }
     }
   }

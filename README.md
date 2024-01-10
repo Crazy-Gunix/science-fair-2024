@@ -7,7 +7,7 @@ Here are the packages required (debian):
 - clang
 - lld
 - llvm
-- openjdk-21-jdk (you can use a different version if needed)
+- openjdk-17-jdk (you can use a different version if needed)
 
 ## Build
 To build the code, run `./build`.
