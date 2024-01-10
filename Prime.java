@@ -22,8 +22,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import java.io.*;
-
 public class Prime {
   public static void main(String[] args) {
     int n = 1000000;
@@ -35,7 +33,6 @@ public class Prime {
     for (i = 3; i * i <= n; i += 2) {
       if (Primes[i / 2] == 0) {
         for (j = 3 * i; j <= n; j += 2 * i) {
-          System.out.println(j);
           Primes[j / 2] = 1;
         }
       }

@@ -7,11 +7,11 @@ echo "---------------"
 
 TIMEFORMAT=%R
 
-t1=$((time java Prime > /dev/null) 2>&1)
+t1=$((time java Prime) 2>&1)
 echo "Trial 1: ${t1}s"
-t2=$((time java Prime > /dev/null) 2>&1)
+t2=$((time java Prime) 2>&1)
 echo "Trial 2: ${t2}s"
-t3=$((time java Prime > /dev/null) 2>&1)
+t3=$((time java Prime) 2>&1)
 echo "Trial 3: ${t3}s"
 
 avg=$(echo "scale=3;(${t1}+${t2}+${t3})/3" | bc)

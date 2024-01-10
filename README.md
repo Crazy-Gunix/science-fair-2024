@@ -48,12 +48,6 @@ There are two benchmark programs for the programs:
 
 `./bench-java` - For Java program.
 
-You can also run the programs yourself, but remember that it will print out a lot of numbers!
-
-`./prime` - C program.
-
-`java Prime` - Java program.
-
 
 
 ## License
