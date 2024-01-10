@@ -29,9 +29,8 @@ The code in this repository does it slightly differently. Instead of removing fr
 ## Dependencies
 Here are the packages required (debian):
 
-- clang
+- build-essential
 - lld
-- llvm
 - openjdk-17-jdk (you can use a different version if needed)
 
 

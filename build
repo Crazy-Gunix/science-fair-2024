@@ -2,5 +2,5 @@
 #
 # Build script.
 
-clang prime.c -o prime -pipe -Ofast -march=native -mtune=native -fuse-ld=lld
+gcc prime.c -o prime -pipe -Ofast -march=native -mtune=native -fuse-ld=lld
 javac Prime.java
